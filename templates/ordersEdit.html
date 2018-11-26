@@ -1,0 +1,62 @@
+<h1>Order Details</h1>
+<a class="backButton" href="/orders/view">Back</a>
+<hr />
+
+<h2>Edit the order</h2>
+
+<div class="formWrapper">
+  <form id="ordersEdit1" action="/api/shop" method="PUT">
+    <input type="hidden" name="_method" value="PUT" />
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Order ID</div>
+      <input class="disabled displayIdInput" type="text" name="displayId" disabled />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Please select the number of pizza offerings you'd like to order from each available order.</div>
+      <div class="orderboxGroup">
+        <p>Butternut Squash Pizza- $5.00
+          <input class="butternutInput" type="number" name="butternut">
+        </p>
+        <p>Chicken Pizza- $6.00
+          <input class="chickenInput" type="number" name="chicken">
+        </p>
+        <p>Sweet Ricotta Pizza- $7.00
+          <input class="sweetInput" type="number" name="sweet">
+        </p>
+        <p>Macaroni Pizza- $5.00
+          <input class="macaroniInput" type="number" name="macaroni">
+        </p>
+        <p>Cheese Pizza- $6.00
+          <input class="cheeseInput" type="number" name="cheese">
+        </p>
+        <p>Grilled Zucchini Pizza- $8.00
+          <input class="grilledInput" type="number" name="grilled">
+        </p>
+      </div>
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+
+<hr />
+<h2>Delete The Order</h2>
+<div class="formWrapper">
+  <form id="ordersEdit2" action="/api/shop" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE" />
+    <div class="formError"></div>
+    <div class="warning">Are you sure you want to delete this order? Warning: This action cannot be undone!</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Delete Order</button>
+    </div>
+  </form>
+</div>

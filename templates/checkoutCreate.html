@@ -1,0 +1,26 @@
+<h1>Provide your card details to pay for your pizza order</h1>
+
+<div class="formWrapper">
+    <form id="checkout" action="/api/checkout" method="POST">
+      <div class="formError"></div>
+      <div class="inputWrapper">
+        <div class="inputLabel">Card Number</div>
+        <input type="text" name="cardNumber" placeholder="444777666888" />
+      </div>
+      <div class="inputWrapper">
+        <div class="inputLabel">Card Expiry Year</div>
+        <input type="text" name="cardExpiryYear" placeholder="2099" />
+      </div>
+      <div class="inputWrapper">
+        <div class="inputLabel">Card Expiry Month</div>
+        <input type="text" name="cardExpiryMonth" placeholder="12" />
+      </div>
+      <div class="inputWrapper">
+        <div class="inputLabel">Card CVV</div>
+        <input type="password" name="cardCvv" placeholder="***" />
+      </div>
+      <div class="inputWrapper ctaWrapper">
+        <button type="submit" class="cta blue">Make Payment</button>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,3 @@
+This app is a pizza delivery API that allows a user to register, login, create a pizza order and pay for it. On providing card details, the user's credit card is charged using Stripe and a mail sent to the valid mail address provided using the mailgun API.
+
+Fill the registration to sign up. You'll be directed to the dashboard where you'll see available pizza flavors. Orders available are dependent on the time. You can then proceed to fill out an order form and to pay for your pizza. On paying for your pizza, the order you just paid for is automatically deleted from the database. You can always edit and delete your account or order.

@@ -1,0 +1,37 @@
+<h1>Create A Order</h1>
+<h2>Select your order from the list of available pizzas</h2>
+<a class="backButton" href="/menu/all">Back</a>
+<br>
+<div class="formWrapper">
+  <form id="ordersCreate" action="api/shop" method="POST">
+    <div class="formError"></div>
+    <div class="inputWrapper">
+        <div class="inputLabel">Please select the number of pizza offerings you'd like to order from each available order.</div>
+        <div class="orderboxGroup">
+          <p>Butternut Squash Pizza- $5.00
+            <input type="number" name="butternut">
+          </p>
+          <p>Chicken Pizza- $6.00
+            <input type="number" name="chicken">
+          </p>
+          <p>Sweet Ricotta Pizza- $7.00
+            <input type="number" name="sweet">
+          </p>
+          <p>Macaroni Pizza- $5.00
+            <input type="number" name="macaroni">
+          </p>
+          <p>Cheese Pizza- $6.00
+            <input type="number" name="cheese">
+          </p>
+          <p>Grilled Zucchini Pizza- $8.00
+            <input type="number" name="grilled">
+          </p>
+        </div>
+      </div>
+      <div class="inputWrapper ctaWrapper">
+          <button type="submit" class="cta green">Place order</button>
+      </div>
+  </form>
+</div>
+
+
