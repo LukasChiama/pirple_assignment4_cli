@@ -1,3 +1,13 @@
-This app is a pizza delivery API that allows a user to register, login, create a pizza order and pay for it. On providing card details, the user's credit card is charged using Stripe and a mail sent to the valid mail address provided using the mailgun API.
+This is a Command Line Interface for a pizza delivery API. From the command line the following commands can be entered and the the information following will be provided:
 
-Fill the registration to sign up. You'll be directed to the dashboard where you'll see available pizza flavors. Orders available are dependent on the time. You can then proceed to fill out an order form and to pay for your pizza. On paying for your pizza, the order you just paid for is automatically deleted from the database. You can always edit and delete your account or order.
+'exit': 'Kill the CLI (and the rest of the application)',
+'man': 'Show this help page',
+'help': 'Alias of the "man" command',
+'stats': 'Get statistics on the underlying operating system and resource utilization',
+'menu': 'Get the available menu items',
+'List users': 'Show a list of all the registered (undeleted) users in the system',
+'List Recent Users': 'Show a list of users registered in the last 24 hours',
+'More user info --{userId}': 'Show details of a specific to a particular user on provision of a registered email address',
+'List orders': 'Show a list of all orders made',
+'List recent orders': 'Show a list of orders made within the last 24 hours',
+'More order info --{orderId}': 'Show details specific to a particular order on specifying an order ID'
